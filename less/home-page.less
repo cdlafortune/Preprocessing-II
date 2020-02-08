@@ -1,3 +1,30 @@
+//imports
+@import "variables.less";
+@import "mixins.less";
+
+//Header
+header {
+  .flex(row, space-between, center);
+  border-bottom: 2px dashed @navigation-border;
+  width: 90%;
+  margin: 3%;
+
+  .nav-links {
+      // .flex(row, flex-end, center);
+      width: 70%;
+  }
+
+
+  h1 {
+      // .flex(row, flex-start, center);
+      width: 20%;
+      margin-left: 5%;
+  }
+
+  
+  }
+  
+
 .home {
 
   .content-section {
@@ -56,6 +83,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      .btn {
+        .btn-style();
+      }
     }
   }
 }// home

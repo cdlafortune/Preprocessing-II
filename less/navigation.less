@@ -1,1 +1,13 @@
 // Navigation Styles here
+@import "variables.less";
+@import "mixins.less";
+
+    nav {
+        width: 100%;
+        .flex(row, space-evenly, center);
+        a {
+            text-decoration: none;
+            color: @font-color;
+            font-size: 16px;
+        }
+    }
